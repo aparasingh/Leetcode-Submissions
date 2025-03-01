@@ -10,4 +10,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0577-employee-bonus](https://github.com/aparasingh/Leetcode-Submissions/tree/master/0577-employee-bonus) |
 | [1801-average-time-of-process-per-machine](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1801-average-time-of-process-per-machine) |
 | [1908-recyclable-and-low-fat-products](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1908-recyclable-and-low-fat-products) |
+## Two Pointers
+|  |
+| ------- |
+| [1894-merge-strings-alternately](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1894-merge-strings-alternately) |
+## String
+|  |
+| ------- |
+| [1894-merge-strings-alternately](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1894-merge-strings-alternately) |
 <!---LeetCode Topics End-->
