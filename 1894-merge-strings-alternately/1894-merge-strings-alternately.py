@@ -1,5 +1,5 @@
 class Solution:
-    def mergeAlternately(self, word1: str, word2: str) -> str:
+    def mergeAlternately(self, word1,word2):
         len1 = len(word1)
         len2 = len(word2)
         finLen = max(len1,len2)
