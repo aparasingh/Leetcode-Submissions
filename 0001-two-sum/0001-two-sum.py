@@ -1,12 +1,8 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        indices = range(len(nums))
-        updated_indices = list(indices)
-        for i in indices:
-            value = nums[i]
-            updated_indices.remove(i)
-            for y in updated_indices:
-                if value + nums[y] == target:
-                    return [i,y]
-        
-        
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in range(len(nums)):
+            value = target - nums[i]
+            if value in nums:
+                next_index = nums.index(value)
+                if i != next_index:
+                    return [i,next_index]
