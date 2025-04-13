@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/aparasingh/Leetcode-Submissions/tree/master/0027-remove-element) |
 | [1894-merge-strings-alternately](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1894-merge-strings-alternately) |
 ## String
 |  |
@@ -55,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/aparasingh/Leetcode-Submissions/tree/master/0001-two-sum) |
+| [0027-remove-element](https://github.com/aparasingh/Leetcode-Submissions/tree/master/0027-remove-element) |
 ## Hash Table
 |  |
 | ------- |
