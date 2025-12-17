@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1795-rearrange-products-table](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1795-rearrange-products-table) |
 | [1801-average-time-of-process-per-machine](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1801-average-time-of-process-per-machine) |
 | [1811-fix-names-in-a-table](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1811-fix-names-in-a-table) |
+| [1873-calculate-special-bonus](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1873-calculate-special-bonus) |
 | [1877-find-followers-count](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1877-find-followers-count) |
 | [1882-the-number-of-employees-which-report-to-each-employee](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1882-the-number-of-employees-which-report-to-each-employee) |
 | [1908-recyclable-and-low-fat-products](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1908-recyclable-and-low-fat-products) |
