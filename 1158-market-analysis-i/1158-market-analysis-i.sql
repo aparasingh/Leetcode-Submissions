@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+SELECT U.user_id as buyer_id, U.join_date, SUM(IF(YEAR(O.order_date) = '2019', 1, 0)) as orders_in_2019 FROM Users U LEFT JOIN Orders O ON (U.user_id = O.buyer_id) LEFT JOIN Items I ON (O.item_id = I.item_id) group by U.user_id
