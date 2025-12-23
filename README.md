@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1321-restaurant-growth](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1321-restaurant-growth) |
 | [1327-last-person-to-fit-in-the-bus](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1327-last-person-to-fit-in-the-bus) |
 | [1338-queries-quality-and-percentage](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1338-queries-quality-and-percentage) |
+| [1341-movie-rating](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1341-movie-rating) |
 | [1390-average-selling-price](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1390-average-selling-price) |
 | [1415-students-and-examinations](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1415-students-and-examinations) |
 | [1462-list-the-products-ordered-in-a-period](https://github.com/aparasingh/Leetcode-Submissions/tree/master/1462-list-the-products-ordered-in-a-period) |
