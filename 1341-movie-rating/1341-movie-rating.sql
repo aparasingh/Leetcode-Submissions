@@ -7,4 +7,4 @@ UNION ALL
 (SELECT
 M.title as results
 FROM
-MovieRating MR JOIN Movies M ON (MR.movie_id = M.movie_id) where YEAR(MR.created_at) = '2020' and MONTH(MR.created_at) = '2' GROUP BY M.movie_id ORDER BY AVG(MR.rating) DESC, M.title ASC LIMIT 1);
+MovieRating MR JOIN Movies M ON (MR.movie_id = M.movie_id) where MR.created_at BETWEEN '2020-02-01' and '2020-02-29' GROUP BY M.movie_id ORDER BY AVG(MR.rating) DESC, M.title ASC LIMIT 1);
