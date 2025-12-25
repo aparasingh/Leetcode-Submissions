@@ -19,9 +19,4 @@ ranked_categories AS(
         ,ROW_NUMBER() OVER(PARTITION BY season ORDER BY total_quantity DESC, total_revenue DESC) AS rnk
     FROM season_data
 )
-select season
-        ,category
-        ,total_quantity
-        ,total_revenue
-        from ranked_categories where rnk = 1
-        ORDER BY season ASC;
+select season,category,total_quantity,total_revenue from ranked_categories where rnk = 1 ORDER BY season ASC;
