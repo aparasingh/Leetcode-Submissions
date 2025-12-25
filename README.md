@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3475-dna-pattern-recognition](https://github.com/aparasingh/Leetcode-Submissions/tree/master/3475-dna-pattern-recognition) |
 | [3497-analyze-subscription-conversion](https://github.com/aparasingh/Leetcode-Submissions/tree/master/3497-analyze-subscription-conversion) |
 | [3564-seasonal-sales-analysis](https://github.com/aparasingh/Leetcode-Submissions/tree/master/3564-seasonal-sales-analysis) |
+| [3570-find-books-with-no-available-copies](https://github.com/aparasingh/Leetcode-Submissions/tree/master/3570-find-books-with-no-available-copies) |
 ## Two Pointers
 |  |
 | ------- |
