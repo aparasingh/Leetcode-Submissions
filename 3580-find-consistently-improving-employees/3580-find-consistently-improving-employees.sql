@@ -1,13 +1,10 @@
 # Write your MySQL query statement below
-WITH qualifying_employees AS (
-    select employee_id from performance_reviews group by employee_id having count(review_id) >= 3
-),
-review_ranked AS (
+WITH review_ranked AS (
 select review_id,
 employee_id,
 rating,
 review_date,
-ROW_NUMBER() OVER (PARTITION BY employee_id ORDER BY review_date DESC) as rnk FROM performance_reviews where employee_id in (select employee_id from qualifying_employees)
+ROW_NUMBER() OVER (PARTITION BY employee_id ORDER BY review_date DESC) as rnk FROM performance_reviews
 ),
 last_three AS (
 select * FROM review_ranked where rnk <= 3
