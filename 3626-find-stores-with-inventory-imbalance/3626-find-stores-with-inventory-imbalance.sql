@@ -1,8 +1,19 @@
-# Write your MySQL query statement below
-with expensive_ranking as (
-    select *, row_number() OVER (partition by store_id order by price DESC) as rnk, COUNT(inventory_id) OVER (partition by store_id) as cnt from inventory
-),
-cheapest_ranking as (
-    select *, ROW_number() OVER (partition by store_id order by price ASC) as rnk, COUNT(inventory_id) OVER (partition by store_id) as cnt from inventory
+WITH process AS (
+  SELECT
+    store_id,
+    FIRST_VALUE(product_name) OVER (PARTITION BY store_id ORDER BY price DESC) AS most_exp_product,
+    FIRST_VALUE(product_name) OVER (PARTITION BY store_id ORDER BY price) AS cheapest_product,
+    FIRST_VALUE(quantity) OVER (PARTITION BY store_id ORDER BY price DESC) AS most_expensive_quantity,
+    FIRST_VALUE(quantity) OVER (PARTITION BY store_id ORDER BY price) AS cheapest_quantity,
+    ROW_NUMBER() OVER (PARTITION BY store_id ORDER BY store_id) AS rn,
+    COUNT(*) OVER (PARTITION BY store_id) AS cnt
+  FROM inventory
 )
- select s.*, e.product_name as most_exp_product, c.product_name as cheapest_product, ROUND(c.quantity/e.quantity,2) as imbalance_ratio from expensive_ranking e join cheapest_ranking c ON (e.store_id = c.store_id) join stores s on (s.store_id = e.store_id) where e.rnk = 1 and c.rnk = 1 and c.cnt >=3 and e.cnt >= 3 and c.quantity/e.quantity > 1 order by imbalance_ratio DESC, s.store_name ASC
+SELECT
+  store_id, store_name, location, most_exp_product, cheapest_product,
+  ROUND(cheapest_quantity / most_expensive_quantity, 2) AS imbalance_ratio
+FROM process
+JOIN stores USING (store_id)
+WHERE rn = 1 AND cnt >= 3
+  AND (cheapest_quantity / most_expensive_quantity) > 1
+ORDER BY imbalance_ratio DESC, store_name;
