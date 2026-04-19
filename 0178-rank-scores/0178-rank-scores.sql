@@ -1,2 +1,3 @@
 # Write your MySQL query statement below
-select S.score, A.id as `rank` from Scores S JOIN (SELECT row_number() over (order by score DESC) as id, score FROM Scores GROUP BY score) A ON (S.score = A.score) ORDER BY S.score DESC;
+select score, DENSE_RANK() OVER (order by score DESC) as `rank`
+FROM Scores
